@@ -8,7 +8,7 @@
       <variable name="descricao" value="asdasd"/>
 	  <variable name="desvio" value="aaaaaaaa"/>
 	  <variable name="transbordo" value=""/>
-	  <variable name="falha" value="fffffffffffffff"/>
+	  <variable name="falha" value="fffffffffffffffsssssssss"/>
     </variables>
   </user>
 </include>

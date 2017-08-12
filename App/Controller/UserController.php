@@ -28,9 +28,19 @@ class UserController extends Controller {
         $user->setFalha($_REQUEST['falha']);
         $user->setTransbordo($_REQUEST['transbordo']);
 
-        $user = UserRepository::save($user);
+        //Validando campos obrigatorios
+        if (empty($_REQUEST['id']) || !is_numeric($_REQUEST['id'])) $erros['id'] = 'O campo ID e obrigatorio e numerico.';
+        if (empty($_REQUEST['password'])) $erros['password'] = 'O campo password e obrigatorio.';
 
-        $this->redirect('/users');
+        //Verifica se ocorreu algum erro
+        if ($erros) {
+            //Retorna para o formulario com os erros
+            return $this->view('/user/create', ['user' => $user, 'erros'=>$erros]);
+        }else{
+            //grava dados do usuario
+            $user = UserRepository::save($user, $id);
+            $this->redirect('/users');
+        }
     }
 
     public function edit($id) {

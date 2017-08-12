@@ -24,8 +24,6 @@ class UserRepository {
         $xmlDom->saveXML(self::$path .'/registers//'. $user->getId() . '.xml');
         
         if (isset($id) && $id != $user->getId()) unlink($file);
-        
-
     }
 
     public static function find($id) {
