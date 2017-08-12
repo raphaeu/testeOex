@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <include>
-  <user id="1002">
+  <user id="1001">
     <params>
-      <param name="password" value="passawordss"/>
+      <param name="password" value="Senha 1"/>
     </params>
     <variables>
-      <variable name="descricao" value="Descri&#xE7;&#xE3;o usu&#xE1;rio 1001"/>
+      <variable name="descricao" value="Descri&#xE7;&#xE3;o usu&#xE1;rio 100"/>
 	  <variable name="desvio" value="1002"/>
 	  <variable name="transbordo" value="1003"/>
 	  <variable name="falha" value="1004"/>

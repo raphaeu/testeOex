@@ -32,7 +32,7 @@ return [
     ]
     ,[
         'method'     =>   'PUT',
-        'route'      =>   '/user/:id',
+        'route'      =>   '/user/:id/edit',
         'controller' =>   'UserController',
         'action'     =>   'update',
     ]

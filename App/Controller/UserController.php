@@ -56,7 +56,7 @@ class UserController {
     public function edit($id) {
         $user = UserRepository::find($id);
 
-        return View::render('/user/edit', ['user' => $user]);
+        return View::render('/user/edit', ['id'=>$id,  'user' => $user]);
     }
 
     public function update($id) {
@@ -86,7 +86,7 @@ class UserController {
         if ($erros) {
             //Retorna para o formulario com os erros
             Session::setFlashMessenger('Ops! Existem alguns erros no formulário, verifique!', 'danger');
-            return View::render('/user/edit', ['user' => $user, 'erros'=>$erros]);
+            return View::render('/user/edit', ['id'=>$id, 'user' => $user, 'erros'=>$erros]);
         }else{
             //grava dados do usuario
             Session::setFlashMessenger('Usuário alterado com sucesso', 'success');
