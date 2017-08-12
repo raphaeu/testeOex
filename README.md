@@ -1,4 +1,4 @@
-<h1>Definicao do teste</h1>
+<h1>Definição do teste</h1>
 Fazer um aplicação PHP com MVC e persistindo os dados em um arquivo XML.
 
 <h1>Tecnologias utilizadas</h1>
