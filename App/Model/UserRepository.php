@@ -23,7 +23,7 @@ class UserRepository {
 
         $xmlDom->saveXML(self::$path .'/registers//'. $user->getId() . '.xml');
         
-        if ($id != $user->getId()) unlink($file);
+        if (isset($id) && $id != $user->getId()) unlink($file);
         
 
     }
