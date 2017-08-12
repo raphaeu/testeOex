@@ -7,6 +7,6 @@
 <hr>
 <div class="container">
 <footer>
-  <p>&copy; 2017 Raphaeu, Pow.</p>
+  <p>&copy; 2017 Rafael Aguiar Ferreira, PHP.</p>
 </footer>
 </div> 

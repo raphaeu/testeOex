@@ -1,15 +1,14 @@
 <?php
 namespace App\Controller;
 
-use Core\Controller;
+use Core\View;
 
-class HomeController extends Controller
+
+
+class HomeController 
 {
     public function index()
     {        
-        return $this->view('/index', []);
+        return View::redirect('/users');
     }
-
-    
-    
 }

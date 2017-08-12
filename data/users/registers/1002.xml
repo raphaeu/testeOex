@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<include>
+  <user id="1002">
+    <params>
+      <param name="password" value="passawordss"/>
+    </params>
+    <variables>
+      <variable name="descricao" value="Descri&#xE7;&#xE3;o usu&#xE1;rio 1001"/>
+	  <variable name="desvio" value="1002"/>
+	  <variable name="transbordo" value="1003"/>
+	  <variable name="falha" value="1004"/>
+    </variables>
+  </user>
+</include>

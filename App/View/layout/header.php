@@ -24,20 +24,11 @@
 
     <body>
         <?php include(ROOT_VIEW . '/layout/navbar.php'); ?>
-    
+        <?php $messeger = Core\Session::getFlashMessenger();?>
         <div class="container">
-            <?php if (isset($danger)) { ?>
-            <div class="alert alert-danger" role="alert">
-                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                <strong><?=$danger?></strong><hr>
-                <ul>
-                    <?php foreach($erros as $erro) { ?>
-                    <li><?=$erro?></li>
-                    <?php } ?>
-                </ul>
-                    </div>
-            <?php } ?>
-            <?php if (isset($success)) { ?>
-                <div class="alert alert-success" role="alert"><?=$success?></div>
+            <?php if (isset($messeger)) { ?>
+            <div class="alert alert-<?=$messeger['type']?>" role="alert">
+                <?=$messeger['text']?>                
+            </div>
             <?php } ?>
 

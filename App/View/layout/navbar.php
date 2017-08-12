@@ -9,12 +9,7 @@
             </button>
             <a class="navbar-brand" href="/">Teste OEX</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/users">Usuarios</a></li>
-                  <li><a href="/about">Sobre</a></li>
-                </ul>
-        </div>
+
     </div>
 </nav>
 

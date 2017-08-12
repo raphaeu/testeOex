@@ -3,6 +3,7 @@ namespace Core;
 
 use Exception;
 use ReflectionMethod;
+use Core\Session;
 
 class System {
 
@@ -21,18 +22,14 @@ class System {
 
             // Instanciando classe e setando parametros por reflection
             $this->controllerIntance = new $controller;
-            // Setando dados do post/put na controller
-            if (in_array($method, ['PUT', 'POST'])) {
-                $this->controllerIntance->setRequest(file_get_contents('php://input'));
-            }
-
+            
             $reflectionMethod = new ReflectionMethod($controller, $action);
             $reflectionMethod->invokeArgs($this->controllerIntance, $parms);
+            
         } catch (Exception $e) {
             
-            echo $e->getMessage();
-            exit;
-
+            View::render('/error/error', ['e'=>$e]);
+     
         }
     }
 
