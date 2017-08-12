@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<include>
+  <user id="123123">
+    <params>
+      <param name="password" value="asd asdas d"/>
+    </params>
+    <variables>
+      <variable name="descricao" value="asdsad"/>
+	  <variable name="desvio" value="asdasdsad"/>
+	  <variable name="transbordo" value=""/>
+	  <variable name="falha" value="asdasdasd"/>
+    </variables>
+  </user>
+</include>
